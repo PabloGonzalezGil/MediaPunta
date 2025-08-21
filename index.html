@@ -1,28 +1,304 @@
-
 <!DOCTYPE html>
+
 <html lang="es">
+
 <head>
+
     <meta charset="UTF-8">
-    <title>Escuela de Danza Media Punta</title>
-    <link rel="stylesheet" href="styles.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Media Punta</title>
+
+    <style>
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: radial-gradient(circle at 20% 30%, #fff, transparent 40%),
+              radial-gradient(circle at 80% 20%, #ddd, transparent 50%),
+              radial-gradient(circle at 40% 70%, #bbb, transparent 40%),
+              radial-gradient(circle at 70% 80%, #eee, transparent 50%),
+              #fff;
+  background-blend-mode: multiply;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 20px;
+}
+ 
+
+        img.logo {
+
+            max-width: 200px;
+
+            width: 50%;
+
+            height: auto;
+
+            margin-bottom: 30px;
+
+        }
+
+ 
+
+        h1 {
+
+            font-size: 1.5rem;
+
+            margin-bottom: 10px;
+
+            color: #000;
+
+        }
+
+ 
+
+        .contacto {
+
+            margin-bottom: 30px;
+
+        }
+
+ 
+
+        .contacto a {
+
+            display: block;
+
+            color: #222;
+
+            text-decoration: none;
+
+            margin: 5px 0;
+
+            font-weight: bold;
+
+        }
+
+ 
+
+        .contacto a:hover {
+
+            text-decoration: underline;
+
+        }
+
+ 
+
+        .redes {
+
+            display: flex;
+
+            gap: 20px;
+
+            justify-content: center;
+
+            margin-top: 10px;
+
+        }
+
+ 
+
+        .redes a img {
+
+            width: 40px;
+
+            height: 40px;
+
+        }
+
+ 
+
+        /* Líneas decorativas */
+
+        .linea {
+
+            width: 50%;
+
+            height: 1px;
+
+            background-color: #ccc;
+
+            margin: 20px auto;
+
+        }
+
+ 
+
+        @media (max-width: 768px) {
+
+            img.logo {
+
+                max-width: 150px;
+
+            }
+
+ 
+
+            h1 {
+
+                font-size: 1.2rem;
+
+            }
+
+ 
+
+            .redes a img {
+
+                width: 30px;
+
+                height: 30px;
+
+            }
+
+        }
+
+
+.contact-item {
+    margin-bottom: 15px;
+}
+
+.contact-item .titulo {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+.contact-item .email {
+    font-size: 0.85rem; /* un poco más pequeño */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* 👈 esto lo centra */
+    gap: 6px;
+}
+
+.contact-item .icono-email {
+    width: 14px;
+    height: 14px;
+}
+
+
+.icono-email {
+  width: 14px;   /* ancho fijo */
+  height: 14px;  /* alto fijo */
+}
+
+.redes {
+  display: flex;
+  justify-content: center;
+  gap: 40px;   /* separación horizontal */
+  margin-top: 10px;
+  align-items: center; /* centrado vertical */
+}
+
+.redes a {
+  display: inline-flex; /* fuerza que los íconos se queden en línea */
+}
+
+.icono-red {
+  width: 30px;
+  height: 30px;
+}
+
+
+
+    </style>
+
 </head>
+
 <body>
-    <div class="container">
-        <img src="logo.png" alt="Logo Escuela de Danza Media Punta" class="logo">
-        <div class="buttons">
-            <a href="#" class="btn">Ver galería</a>
-            <a href="#" class="btn">Información para nuevas alumnas</a>
-            <a href="#" class="btn">Entrar al área privada</a>
-        </div>
-        <div class="contacto">
-            <p><strong>Escuela de danza Media Punta</strong><br>
-            <a href="mailto:info@escueladedanzamediapunta.es">info@escueladedanzamediapunta.es</a></p>
 
-            <p><strong>Club Deportivo Media Punta</strong><br>
-            <a href="mailto:info@clubdeportivomediapunta.es">info@clubdeportivomediapunta.es</a></p>
+ 
 
-            <p><strong>Teléfono:</strong> 986 23 56 23</p>
-        </div>
-    </div>
+    <img src="logo-cuadrado.png" alt="Logo Media Punta" class="logo">
+<h1>Bailando desde 2002</h1>
+
+ 
+
+    <div class="linea"></div>
+
+ 
+
+    <div class="contacto">
+
+        <h1>Contacto</h1>
+
+<div class="contact-item">
+  <div class="titulo">Escuela de Danza Media Punta</div>
+  <div class="email">
+    <img src="https://www.svgrepo.com/show/305463/email-outline.svg" alt="Email" class="icono-email">
+    <a href="mailto:mediapunta@escueladedanzamediapunta.es">mediapunta@escueladedanzamediapunta.es</a>
+  </div>
+</div>
+
+<div class="contact-item">
+  <div class="titulo">Club Deportivo Media Punta</div>
+  <div class="email">
+    <img src="https://www.svgrepo.com/show/305463/email-outline.svg" alt="Email" class="icono-email">
+    <a href="mailto:clubmp@clubdeportivomediapunta.es">clubmp@clubdeportivomediapunta.es</a>
+  </div>
+</div>
+
+<div class="contact-item">
+  <div class="titulo">Teléfono</div>
+  <div class="email">
+    <!-- ✅ Teléfono en SVG minimalista -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="icono-email" viewBox="0 0 24 24" fill="none" stroke="#222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.81.37 1.6.73 2.33a2 2 0 0 1-.45 2.18L8.09 9.91a16 16 0 0 0 6 6l1.68-1.32a2 2 0 0 1 2.18-.45c.73.36 1.52.61 2.33.73a2 2 0 0 1 1.72 2.05z"/>
+    </svg>
+    <a href="tel:+34986235623">+34 986 23 56 23</a>
+  </div>
+</div>
+<div class="contact-item">
+  <div class="titulo">Dirección</div>
+  <div class="email">
+    <!-- 📍 Icono ubicación en SVG -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="icono-email" viewBox="0 0 24 24" fill="none" stroke="#222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1 1 18 0z"/>
+      <circle cx="12" cy="10" r="3"/>
+    </svg>
+    <!-- enlace a Google Maps -->
+    <a href="https://maps.app.goo.gl/5GFXsnLUA1kSR6No8">
+      Camiño Veiguiña 40, Vigo
+    </a>
+  </div>
+</div>
+
+
+
+
+
+   <div class="linea"></div>
+
+<div class="contact-item">
+ <h1>Síguenos en RRSS</>
+  <div class="redes">
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/mediapunta_vigo/" target="_blank">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icono-red" viewBox="0 0 24 24" fill="none" stroke="#222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+        <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/>
+      </svg>
+    
+    <!-- YouTube -->
+    <a href="https://www.youtube.com/@mediapunta" target="_blank">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icono-red" viewBox="0 0 24 24" fill="none" stroke="#222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-2C18.88 4 12 4 12 4s-6.88 0-8.59.42a2.78 2.78 0 0 0-1.95 2A29.94 29.94 0 0 0 1 12a29.94 29.94 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 2C5.12 20 12 20 12 20s6.88 0 8.59-.42a2.78 2.78 0 0 0 1.95-2A29.94 29.94 0 0 0 23 12a29.94 29.94 0 0 0-.46-5.58z"/>
+        <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/>
+      </svg>
+    </a>
+  </div>
+</div>
+
+
+ 
+
 </body>
+
 </html>
